@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Việt Nam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .skip-link:focus {
+            opacity: 1;
+        }
+        main {
+            padding: 2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            padding: 5px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+    <header>
+        <h1>Chào mừng đến với Việt Nam</h1>
+    </header>
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="culture.html">Văn Hóa</a>
+        <a href="food.html">Ẩm Thực</a>
+    </nav>
+    <main id="main-content">
+        <h2>Giới thiệu về Việt Nam</h2>
+        <p>Việt Nam là một quốc gia Đông Nam Á với lịch sử phong phú, văn hóa đa dạng và cảnh quan tuyệt đẹp.</p>
+        <section class="gallery">
+            <img src="https://cdn.xanhsm.com/2024/11/aa4af80d-ho-hoan-kiem-2.jpg" alt="Hồ Hoàn Kiếm, Hà Nội">
+            <img src="https://apibeta.baoninhbinh.org.vn/user-blob/15088545-560b-d200-1fa2-cc31adda5a44/2024/11/20/hue.jpg" alt="Cố đô Huế">
+            <img src="https://asiaholiday.com.vn/pic/Tour/Tour%20Du%20lich%20Ha%20Long%20(5)_2261_HasThumb.jpg" alt="Vịnh Hạ Long">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsYK7P9Xo6RvypAhQHaW3jkdn7ffxhIXo6Q&s" alt="Bưu điện Trung tâm Sài Gòn">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqtiUiBMbEL1B4qFNpjUAx6SNr8fkkwln0Tw&s" alt="Đảo Phú Quốc">
+            <img src="https://bcp.cdnchinhphu.vn/334894974524682240/2024/12/5/dbscl-17334032249931008351080.png" alt="Đồng bằng sông Cửu Long">
+        </section>
+        <section id="culture">
+            <h2>Khám phá Văn hóa Việt Nam</h2>
+            <p>Văn hóa Việt Nam kết hợp giữa truyền thống Á Đông và ảnh hưởng phương Tây, với lễ hội, nghệ thuật và ẩm thực độc đáo.</p>
+            <img src="https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2016/05/15/2.jpg" alt="Múa dân tộc Việt Nam">
+        </section>
+        
+        <section id="food">
+            <h2>Hương vị Việt Nam</h2>
+            <p>Ẩm thực Việt Nam nổi tiếng với phở, bánh mì và các món ăn tươi ngon. Quay lại </p>
+            <div class="image-grid">
+                <img src="https://daynauan.info.vn/wp-content/uploads/2016/07/pho-ha-noi.jpg" alt="Phở bò">
+                <img src="https://cdn.eva.vn/upload/4-2024/images/2024-10-29/1730180151-1a47d808-2600-4066-width680height907.jpg" alt="Bánh mì">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
