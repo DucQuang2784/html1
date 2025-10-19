@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Liên kết website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .link-box {
+    width: 230px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+  .link-box h3 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  select {
+    width: 100%;
+    padding: 4px;
+  }
+</style>
+
+<script>
+  function goToSite(selectObj) {
+    const url = selectObj.value;
+    if (url !== "") {
+      window.open(url, "_blank"); // Mở trang trong tab mới
+    }
+  }
+</script>
+</head>
+<body>
+
+  <div class="link-box">
+    <h3>Liên kết website</h3>
+    <form>
+      <select onchange="goToSite(this)">
+        <option value="">--- Tin tức ---</option>
+        <option value="https://laodong.vn/">Báo Lao Động</option>
+        <option value="https://vnexpress.net/">Tin nhanh Việt Nam</option>
+        <option value="https://tuoitre.vn/">Báo Tuổi Trẻ</option>
+      </select>
+    </form>
+  </div>
+
+</body>
+</html>

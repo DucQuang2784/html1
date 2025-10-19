@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tạo tài khoản mới</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+  }
+
+  .logo {
+    color: #1877f2;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .form-container {
+    background-color: white;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    color: gray;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .name-input {
+    display: flex;
+    gap: 10px;
+  }
+
+  .gender {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  .gender label {
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    padding: 8px 15px;
+    flex: 1;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn {
+    background-color: #00a400;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #009000;
+  }
+
+  .link {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .link a {
+    color: #1877f2;
+    text-decoration: none;
+  }
+
+  .link a:hover {
+    text-decoration: underline;
+  }
+
+  small {
+    display: block;
+    font-size: 12px;
+    color: #65676b;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="logo">tacebook</div>
+
+  <div class="form-container">
+    <h2>Tạo tài khoản mới</h2>
+    <p>Nhanh chóng và dễ dàng.</p>
+
+    <form>
+      <div class="name-input">
+        <input type="text" placeholder="Họ">
+        <input type="text" placeholder="Tên">
+      </div>
+
+      <input type="text" placeholder="Số di động hoặc email">
+      <input type="password" placeholder="Mật khẩu mới">
+
+      <label>Ngày sinh</label>
+      <div class="name-input">
+        <select>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+        </select>
+        <select>
+          <option>Tháng 8</option>
+          <option>Tháng 9</option>
+        </select>
+        <select>
+          <option>2023</option>
+          <option>2024</option>
+        </select>
+      </div>
+
+      <label>Giới tính</label>
+      <div class="gender">
+        <label>Nữ <input type="radio" name="gender"></label>
+        <label>Nam <input type="radio" name="gender"></label>
+        <label>Tùy chỉnh <input type="radio" name="gender"></label>
+      </div>
+
+      <small>
+        Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của chúng tôi.
+      </small>
+
+      <button type="submit" class="btn">Đăng ký</button>
+
+      <div class="link">
+        <a href="#">Bạn đã có tài khoản ư?</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

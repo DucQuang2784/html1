@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đóng góp ý kiến</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #fff; }
+  .feedback-box {
+    width: 360px;
+    border: 1px solid #000;
+    padding: 12px;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+  .feedback-box h3 {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 6px;
+    vertical-align: top;
+  }
+  label {
+    display: inline-block;
+    width: 90px;
+  }
+  input[type="text"], textarea {
+    width: 95%;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  .buttons {
+    text-align: center;
+    padding-top: 6px;
+  }
+  input[type="submit"], input[type="reset"] {
+    padding: 5px 10px;
+    margin-right: 8px;
+    border: 1px solid #888;
+    background: #eaf0f8;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <div class="feedback-box">
+    <h3>ĐÓNG GÓP Ý KIẾN</h3>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="hoten">Họ và tên:</label></td>
+          <td><input type="text" id="hoten" name="hoten" value="Lương Trần Hy Hiển"></td>
+        </tr>
+        <tr>
+          <td><label for="ykien">Nội dung góp ý:</label></td>
+          <td>
+            <textarea id="ykien" name="ykien">Ban quản trị nên thường xuyên cập nhật thông tin</textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="buttons">
+            <input type="submit" value="Gửi đi">
+            <input type="reset" value="Nhập lại">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>

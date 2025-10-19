@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mùa Xuân Hà Nội</title>
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .skip-link:focus {
+      top: 10px;
+    }
+    nav {
+      display: inline-block;
+      width: 80%;
+      background-color: #e8f5e9;
+      text-align: center;
+      padding: 10px;
+      border-radius: 12px;
+      margin: 0 auto;
+    }
+    nav img {
+      width: 10%;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #f8b500, #ffdd00);
+      color: #fff;
+    }
+    main {
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: center;
+      align-items: start;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .flex img {
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      background: #e0f7fa;
+      padding: 10px;
+      margin-top: 20px;
+      border-top: 2px solid #81d4fa;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+  <header>
+    <h1>Mùa Xuân Hà Nội</h1>
+    <p>Hương sắc đất trời Thủ đô vào độ đẹp nhất trong năm</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#trangchu">Trang chủ</a></li>
+      <li><a href="#congvien">Công viên</a></li>
+      <li><a href="#gioithieu">Giới thiệu</a></li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <h2>Vẻ đẹp mùa xuân</h2>
+    <p>
+      Khi xuân về, Hà Nội khoác lên mình tấm áo mới với những hàng cây đâm chồi nảy lộc,
+      hoa ban, hoa sưa, hoa đào đua nhau khoe sắc. Không khí trở nên ấm áp, nhịp sống
+      cũng như chậm lại để mọi người tận hưởng những khoảnh khắc yên bình.
+    </p>
+    <section class="grid">
+      <img src="https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2024/2/9/7-17074140112671923050751.jpg" alt="Hoa đào nở ở Hà Nội">
+      <img src="https://nhn.1cdn.vn/2023/02/09/mua-xuan-hn.jpg" alt="Hà Nội trong sương xuân">
+    </section>
+    <section class="flex">
+      <img src="https://dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2020/03/1-4.png" alt="Hồ Gươm mùa xuân">
+      <img src="https://cdn-i.vtcnews.vn/upload/2025/01/03/pho-2-sua-14230862.jpg" alt="Phố cổ Hà Nội mùa xuân">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6SzyC_lqTqwJxEBi-XuN6pT5O4nc3gqQ2Ig&s" alt="Hồ Tây buổi sớm mùa xuân">
+    </section>
+  </main>
+</body>
+</html>

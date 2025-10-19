@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng nhập diễn đàn</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #fff; }
+  .login-box {
+    width: 320px;
+    border: 1px solid #000;
+    padding: 12px;
+    margin: 40px auto;
+    box-sizing: border-box;
+  }
+  .login-box h3 {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 6px; vertical-align: middle; }
+  label { display: inline-block; width: 95px; }
+  input[type="text"], input[type="password"] {
+    width: calc(100% - 4px);
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  .buttons {
+    text-align: left;
+    padding-top: 6px;
+  }
+  input[type="submit"], input[type="reset"] {
+    padding: 5px 10px;
+    margin-right: 8px;
+    border: 1px solid #888;
+    background: #eaf0f8;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h3>ĐĂNG NHẬP DIỄN ĐÀN</h3>
+    <form action="#" method="post" autocomplete="on">
+      <table>
+        <tr>
+          <td><label for="username">Tên đăng nhập:</label></td>
+          <td><input type="text" id="username" name="username" value="hyhien" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Mật khẩu:</label></td>
+          <td><input type="password" id="password" name="password" value="123456" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="buttons">
+            <input type="submit" value="Đăng nhập" />
+            <input type="reset" value="Phục hồi" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>
