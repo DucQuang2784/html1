@@ -1,0 +1,65 @@
+/* Đặt font và căn giữa toàn trang */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Phần hiển thị ảnh lớn */
+#image {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto 30px auto;
+  border: 4px solid #555;
+  border-radius: 12px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-image 0.3s ease, color 0.3s ease;
+}
+
+/* Dòng chứa các ảnh nhỏ */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Ảnh nhỏ */
+.gallery img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #999;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hiệu ứng hover ảnh nhỏ */
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #333;
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 600px) {
+  #image {
+    height: 200px;
+    font-size: 1rem;
+  }
+
+  .gallery img {
+    width: 90px;
+    height: 60px;
+  }
+}
